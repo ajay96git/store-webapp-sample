@@ -163,4 +163,16 @@
             <url>https://oss.jfrog.org/artifactory/libs-snapshot</url>
         </repository>
     </repositories>
+    <distributionManagement>
+                      <repository>
+                               <id>deployment</id>
+                               <name>web_maven_release</name>
+                               <url>http://localhost:8081/repository/web_maven_release/</url>
+                      </repository>
+                      <snapshotRepository>
+                               <id>deployment</id>
+                               <name>web_maven_snapshot</name>
+                               <url>http://localhost:8081/repository/web_maven_snapshot/</url>
+                      </snapshotRepository>         
+    </distributionManagement>                  
 </project>
